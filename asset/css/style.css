@@ -222,3 +222,12 @@ footer a {
     text-decoration: none;
     color: white;    
 }
+
+
+.newmonsters img, .maj img, .gameplay img {
+    transition: transform .7s ease-in-out;
+}
+
+.newmonsters img:hover, .maj img:hover, .gameplay img:hover {
+    transform: rotate(24deg);
+}
