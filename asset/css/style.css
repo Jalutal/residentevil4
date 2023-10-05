@@ -55,6 +55,10 @@ nav li {
 .nav_header:hover {
     background-color: rgb(185, 11, 11);
 }
+.burger {
+    display:none;
+  }
+
 
                             /* MISE EN PLACE DE L'IMAGE PRINCIPALE */
 .banner {
@@ -174,6 +178,7 @@ main h2 {
     color: white;
     margin-top: 105px;
     padding-top: 55px;
+    width: 100%;
 }
 .pre-footer h2 {
     margin-bottom: 10px;
@@ -208,7 +213,7 @@ footer img {
     height: 25%; 
 }
 .last_child {
-    margin-right: 200px;
+    margin-right: 10%;
 }
 .btn_footer {
     background-color: black;
@@ -230,4 +235,57 @@ footer a {
 
 .newmonsters img:hover, .maj img:hover, .gameplay img:hover {
     transform: rotate(24deg);
+}
+
+@media screen and (max-width:845px)
+{
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .element {
+        width: 80%;
+        
+    }
+    .banner {
+        width: 100vw;
+    }
+
+    .headerflex {
+        display: none;
+    }
+    .burger {
+        display: block;        
+    }
+    .burger img {       
+       width: 50px;
+       height: 50px;
+    }
+    .nav_burger {
+        display: none;
+        background-color: white;
+        color: black;
+        list-style-type: none;
+        font-family: "Roboto Regular";
+        border: 1px solid transparent;
+    }
+    .burger:hover {
+        .nav_burger {
+            display: block            
+        }
+    }
+    .full_footer_flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .footerflex {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding-bottom: 50%;
+    }
 }
